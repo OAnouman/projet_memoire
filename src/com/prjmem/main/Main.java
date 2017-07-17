@@ -10,9 +10,14 @@ public class Main extends Application {
     //Reference to primary Stage
     private Stage primaryStage;
 
+    /**
+     * Lunch the application
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
+
 
     @Override
     public void start(Stage primaryStage) {
