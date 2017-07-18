@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="210.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prjmem.view.about.AboutLayoutController">
+   <children>
+      <ImageView fx:id="appIcon" fitHeight="100.0" fitWidth="120.0" layoutX="14.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="20.0" />
+      <Button layoutX="174.0" layoutY="184.0" onAction="#handleCloseButton" text="_Fermer" AnchorPane.bottomAnchor="5.0" />
+      <Label fx:id="aboutTextLabel" alignment="TOP_LEFT" layoutX="70.0" layoutY="170.0" text="Write about informtion here" textFill="#796c6c" wrapText="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

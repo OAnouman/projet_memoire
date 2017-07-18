@@ -1,0 +1,16 @@
+.tool-bar{
+    -fx-background-color: none;
+    -fx-pref-height: 27px;
+    -fx-padding: 5px 0px 5px 5px;
+}
+
+.tool-bar .button{
+    -fx-background-color: none;
+    -fx-pref-height: 17px;
+    -fx-padding: 2px;
+}
+
+.tool-bar .button:hover{
+    -fx-background-color: rgba(117,208,245,.3);
+
+}

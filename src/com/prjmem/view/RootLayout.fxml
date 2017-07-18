@@ -1,38 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.BorderPane?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prjmem.view.RootLayoutController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
-        <menus>
-          <Menu mnemonicParsing="false" text="Fichier">
-            <items>
-                  <MenuItem mnemonicParsing="false" text="Gestionnaire de site" />
-              <MenuItem mnemonicParsing="false" text="Fermer" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edition">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Paramètres" />
-               </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Affichage">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Actualiser" />
-               </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Transfert">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Aide">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="A propos" />
-               </items>
-            </Menu>
-        </menus>
-      </MenuBar>
+      <VBox prefHeight="40.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Fichier">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Gestionnaire de site" />
+                    <MenuItem mnemonicParsing="false" text="Fermer" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edition">
+                     <items>
+                        <MenuItem fx:id="settingsMenuItem" mnemonicParsing="false" onAction="#handleSettings" text="Paramètres" />
+                     </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Affichage">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Actualiser" />
+                     </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Transfert">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Aide">
+                     <items>
+                        <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#handleAboutMenu" text="A propos" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="1100.0">
+              <items>
+                <Button fx:id="siteManagerTb" mnemonicParsing="false" text="Button" />
+                  <Button mnemonicParsing="false" text="Button" />
+              </items>
+               <padding>
+                  <Insets left="2.0" />
+               </padding>
+            </ToolBar>
+         </children>
+      </VBox>
    </top>
 </BorderPane>

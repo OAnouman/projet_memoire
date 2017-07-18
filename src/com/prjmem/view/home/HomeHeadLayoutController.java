@@ -1,4 +1,4 @@
-package com.prjmem.view;
+package com.prjmem.view.home;
 
 import javafx.fxml.FXML;
 
